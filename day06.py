@@ -1,14 +1,14 @@
-#8진수로 바꾸는 코드 작성
+# 입력 받은 수의 합을 구하는 코드를 작성하자
+# ex : 10 55 . 100 5050
+#O(n) ==> 선형시간
 
-def dec_oct(n) -> int:
-    if n == 0:
-        return ""
-    else:
-        return dec_oct(n // 8) + str(n % 8)
-        # return dec_oct(n // 2) + str(n % 2)
-
-
-##재귀함수 사용 재귀를 어디다가 사용했다는거임
 n = int(input())
-print(dec_oct(n))
-# print(n, oct(n))
+r = 0
+for i in range(n+1):
+    r = r + i
+print(r)
+
+
+
+
+
