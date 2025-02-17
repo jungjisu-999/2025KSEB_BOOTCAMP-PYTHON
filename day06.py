@@ -21,16 +21,21 @@ def print_poly(f_x) -> str:
     return poly_expression
 
 
-def calculation_poly(x_value, f_x) -> int:
+def calculation_poly(x_value, f_x) -> int:...
     return_value = 0
-    term = len(f_x) - 1
+    # term = len(f_x) - 1
 
     for i in range(len(fx)):
         coefficient = f_x[i]
-        return_value += coefficient * pow(x_value, term)
-        term = term - 1
+        term = t_x[i]
 
-    return return_value
+        if coefficient >= 0:
+            poly_expression + poly_expression + "+"
+        poly_expression = poly_expression + f'{coefficient}x^{term}'
+        return_value += coefficient * pow(x_value, term)
+        # term = term - 1
+
+    return poly_expression
 
 
 fx = [2, 3, 4, 0, -9]
